@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/semantic.min.css">
+</head>
+<style>
+  .hero-section {
+    position: relative;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .content-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+  }
+
+   .hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Измените значение от 0.1 до 0.5 для регулировки затемнения */
+    z-index: -1;
+}
+
+.ui.fluid.card .image img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+</style>
+<body>
+
+
+
+ <div class="ui container" style="margin-top: 30px; margin-bottom: 30px;">
+    <div class="ui menu" style="box-shadow: 0 2px 4px rgba(19, 47, 139, 0.1); border-radius: 8px; border: 1px solid #13398b;">
+      <div class="header item" style="color: #13398b;">PetPalace</div>
+      <a href="./index.html"  class="active item">Главная</a>
+      <a href="./about.html" class="item">О нас</a>
+      <a href="./command.html" class="item">Команда</a>
+      <a href="./blog.html" class="item">Блог</a>
+
+      <div class="right menu">
+        <div class="item">
+          <div class="ui action left icon input" style="border-radius: 6px; border: 1px solid #13398b;">
+            <i class="search icon"></i>
+            <input type="text" placeholder="Поиск" style="border: none;">
+            <button class="ui button" style="background: #436abd; color: white; border-radius: 0 6px 6px 0;">Найти</button>
+          </div>
+        </div>
+        <a href="./contacts.html" class="ui primary button" style="background: #13398b; color: white; border-radius: 6px; margin-left: 10px;">
+          Забронировать
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <div class="ui vertical segment" >
+    <div class="hero-section">
+
+      <img class="background-image" 
+           src="./image/maiin.jpg" 
+           alt="PetPalace - премиум отель для животных" 
+           title="PetPalace отель для питомцев" />
+
+      <div class="content-overlay">
+
+        <div class="ui text container" style="margin-bottom: 60px;">
+        <h1 class="ui inverted header" style="font-size: 48px; margin-bottom: 40px;">
+          Премиум-отель для ваших питомцев
+        </h1>
+
+        <h2 class="ui inverted header" style="font-weight: normal; font-size: 20px; line-height: 32px; margin-bottom: 60px;">
+          Забота и комфорт для ваших любимцев, пока вас нет дома. 
+          Профессиональный уход, безопасность и любовь к каждому питомцу.
+        </h2>
+        </div>
+
+        <div class="ui huge buttons">
+          <a href="#" class="ui inverted primary button" style="padding: 16px 32px; margin: 0px 8px;">
+            Забронировать</a>
+          <button class="ui inverted secondary button" style="padding: 16px 32px; margin: 0px 8px;">
+            Узнать больше</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="ui vertical segment" style="padding: 80px 0;">
+  <div class="ui container">
+    <div class="ui center aligned header"> 
+      <h2 style="color: #13398b;">О PetPalace</h2>
+      <div class="sub header" style="font-size: 1.2px;">Почему нам доверяют своих питомцев</div>
+    </div>
+    
+    <div class="ui three column stackable grid" style="margin-top: 50px;">
+      <div class="column">
+        <div class="ui center aligned segment">
+          <i class="heart icon" style="color: #13398b;"></i>
+          <h3>Безопасность</h3>
+          <p>Круглосуточное видеонаблюдение и ветеринарный контроль</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui center aligned segment">
+          <i class="heart outline icon" style="color: #13398b;"></i>
+          <h3>Забота</h3>
+          <p>Индивидуальный подход к каждому питомцу</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui center aligned segment">
+          <i class="heart icon" style="color: #13398b;"></i>
+          <h3>Комфорт</h3>
+          <p>Просторные номера и ежедневные прогулки</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ui vertical segment" style="padding: 80px 0; background: #e6eaff;">
+  <div class="ui container">
+    <div class="ui center aligned header">
+      <h2 style="color: #13398b;">Наши услуги</h2>
+      <div class="sub header" style="font-size: 1.2px;">Все для комфорта вашего питомца</div>
+    </div>
+    
+    <div class="ui three column stackable grid" style="margin-top: 50px;">
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="image">
+            <img src="./image/dogcaif.jpg" alt="Отель для собак">
+          </div>
+          <div class="content">
+            <div class="header">Отель для собак</div>
+            <div class="description">
+              Просторные вольеры с ежедневными прогулками и индивидуальным уходом
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              от 3000 тгк/сутки</span>
+            <span>
+              <i class="paw icon"></i>
+              Комфорт
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="image">
+            <img src="./image/catcaif.jpg" alt="Отель для кошек">
+          </div>
+          <div class="content">
+            <div class="header">Отель для кошек</div>
+            <div class="description">
+              Уютные номера с когтеточками, игрушками и отдельными зонами отдыха
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              от 3000 тгк/сутки</span>
+            <span>
+              <i class="paw icon"></i>
+              Уют</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="image">
+            <img src="./image/grooming.jpg" alt="Груминг">
+          </div>
+          <div class="content">
+            <div class="header">Груминг</div>
+            <div class="description">
+              Профессиональный уход за шерстью, стрижка когтей и гигиенические процедуры
+            </div>
+          </div>
+          <div class="extra content">
+            <span class="right floated">
+              от 3500 тгк</span>
+            <span>
+              <i class="paw icon"></i>
+              Уход</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="ui vertical segment" style="padding: 80px 0;">
+  <div class="ui container">
+    <div class="ui center aligned header">
+      <h2 style="color: #13398b;">Последние новости</h2>
+      <div class="sub header" style="font-size: 1.2px;">
+        Будьте в курсе событий нашего отеля</div>
+    </div>
+    
+    <div class="ui three column stackable grid" style="margin-top: 50px;">
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="content">
+            <div class="header">Новые игровые зоны</div>
+            <div class="meta">13 ноября 2025</div>
+            <div class="description">
+              Открыли новые просторные игровые зоны для активных собак с современным оборудованием.
+            </div>
+          </div>
+          <div class="extra content">
+            <button class="ui inverted blue button">Читать далее</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="content">
+            <div class="header">Скидки на груминг</div>
+            <div class="meta">10 ноября 2025</div>
+            <div class="description">
+              Специальное предложение: скидка 20% на все услуги груминга при бронировании отеля от 5 дней.
+            </div>
+          </div>
+          <div class="extra content">
+            <button class="ui inverted blue button">Читать далее</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="content">
+            <div class="header">Новый ветеринар</div>
+            <div class="meta">6 ноября 2025</div>
+            <div class="description">
+              В нашей команде появился новый специалист - ветеринар с 10-летним опытом работы.
+            </div>
+          </div>
+          <div class="extra content">
+            <button class="ui inverted blue button">Читать далее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="ui vertical segment" style="padding: 50px 0; background: #13398b; color: white;">
+  <div class="ui container">
+    <div class="ui four column stackable grid">
+      
+      <div class="column">
+        <h4 class="ui header" style="color: white;">PetPalace</h4>
+        <p>Премиум-отель для ваших питомцев с заботой и любовью. Работаем с 2019 года.</p>
+        <div class="ui list">
+          <div class="item">
+            <i class="phone icon"></i>
+            <div class="content">+7 (666) 123-77-66</div>
+          </div>
+          <div class="item">
+            <i class="mail icon"></i>
+            <div class="content">info@petpalace.666</div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="column">
+        <h4 class="ui header" style="color: white;">Услуги</h4>
+        <div class="ui list">
+          <div class="item"><a href="#" style="color: #879fd1;">Отель для собак</a></div>
+          <div class="item"><a href="#" style="color: #879fd1;">Отель для кошек</a></div>
+          <div class="item"><a href="#" style="color: #879fd1;">Груминг</a></div>
+          <div class="item"><a href="#" style="color: #879fd1;">Ветеринарные услуги</a></div>
+        </div>
+      </div>
+      
+
+      <div class="column">
+        <h4 class="ui header" style="color: white;">Информация</h4>
+        <div class="ui list">
+          <div class="item"><a href="./about.html" style="color: #879fd1;">О нас</a></div>
+          <div class="item"><a href="./command.html" style="color: #879fd1;">Команда</a></div>
+          <div class="item"><a href="./blog.html" style="color: #879fd1;">Отзывы</a></div>
+          <div class="item"><a href="./contacts.html" style="color: #879fd1;">Контакты</a></div>
+        </div>
+      </div>
+      
+      
+      <div class="column">
+        <h4 class="ui header" style="color: white;">Часы работы</h4>
+        <div class="ui list">
+          <div class="item">
+            <i class="clock icon"></i>
+            <div class="content">Пн-Пт: 8:00-22:00</div>
+          </div>
+          <div class="item">
+            <i class="clock icon"></i>
+            <div class="content">Сб-Вс: 9:00-20:00</div>
+          </div>
+          <div class="item">
+            <i class="paw icon"></i>
+            <div class="content">Прием животных: круглосуточно</div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+    <div class="ui divider" style="margin: 30px 0; background: rgba(255,255,255,0.2);"></div>
+    
+  
+    <div class="ui center aligned container">
+      <p style="margin: 0; color: #879fd1;">
+        © 2024 PetPalace. Все права защищены. 
+        <a href="#" style="color: #879fd1; margin-left: 15px;">Политика конфиденциальности</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+</html>
